@@ -1,12 +1,12 @@
 <?php
 	
-	$DOB = "";
+	$degree = "";
 	
 	if(isset($_REQUEST['submit'])){
 		
-		$email = $_REQUEST['DOB'];
-		if($DOB == ""){
-			echo "invalid DOB!";
+		$degree = $_REQUEST['DOB'];
+		if($degree == ""){
+			echo "invalid degree!";
 		}
 	}else{
 		echo 'invalid request';
