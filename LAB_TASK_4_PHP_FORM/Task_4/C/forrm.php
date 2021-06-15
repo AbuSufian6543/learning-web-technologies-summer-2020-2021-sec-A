@@ -1,20 +1,17 @@
 <?php
 	
-	$DOB = "";
+	$gender = "";
 	
 	if(isset($_REQUEST['submit'])){
 		
-		$email = $_REQUEST['DOB'];
-		if($DOB == ""){
-			echo "invalid DOB!";
+		$gender = $_REQUEST['gender'];
+		if($gender == ""){
+			echo "invalid gender!";
 		}
 	}else{
 		echo 'invalid request';
 	}
 ?>
-
-
-
 
 
 
@@ -24,23 +21,16 @@
 </head>
 <body>
 <fieldset>
-		<legend>Date of Birth</legend>
+		<legend>Gender</legend>
 
 		<form method="POST" >
 			<table>
-				    <tr><td>
-						
-				    dd </td><td>
-						
-				    mm</td><td>
-						
-				    yyyy </td>
-					</td></tr>
+				
 					<tr><td>
-						
-					<input type="date" name="dob"></td>
+						<input type="radio" name="gender" value=""> Male
+						<input type="radio" name="gender" value=""> Female
+						<input type="radio" name="gender" value=""> Other
 					</td></tr>
-					<tr><td>_____________________________</td></tr>
 				<tr><td><input type="submit" name="submit" value="Submit"></td></tr>
 				
 			</table>
@@ -50,3 +40,5 @@
 	
 </body>
 </html>
+
+

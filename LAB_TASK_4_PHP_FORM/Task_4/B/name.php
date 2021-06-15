@@ -1,12 +1,12 @@
 <?php
 	
-	$DOB = "";
+	$gender = "";
 	
 	if(isset($_REQUEST['submit'])){
 		
-		$email = $_REQUEST['DOB'];
-		if($DOB == ""){
-			echo "invalid DOB!";
+		$gender = $_REQUEST['gender'];
+		if($gender == ""){
+			echo "invalid gender!";
 		}
 	}else{
 		echo 'invalid request';
