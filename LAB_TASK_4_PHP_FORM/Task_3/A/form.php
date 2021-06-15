@@ -1,12 +1,12 @@
 <?php
 	
-	$email = "";
+	$DOB = "";
 	
 	if(isset($_REQUEST['submit'])){
 		
-		$email = $_REQUEST['email'];
-		if($email == ""){
-			echo "invalid email!";
+		$email = $_REQUEST['DOB'];
+		if($DOB == ""){
+			echo "invalid DOB!";
 		}
 	}else{
 		echo 'invalid request';
@@ -15,23 +15,38 @@
 
 
 
+
+
+
 <html>
 <head>
 	<title>HTML Form Tag</title>
 </head>
 <body>
+<fieldset>
+		<legend>Date of Birth</legend>
 
 		<form method="POST" >
 			<table>
-				<tr>
-					<td>Email</td></tr>
-					
-					<tr><td><input type="email" name="email" value="<?php echo $email; ?>" placeholder="type email"></td>
-				</tr>
+				    <tr><td>
+						
+				    dd </td><td>
+						
+				    mm</td><td>
+						
+				    yyyy </td>
+					</td></tr>
+					<tr><td>
+						
+					<input type="date" name="dob"></td>
+					</td></tr>
+					<tr><td>_____________________________</td></tr>
 				<tr><td><input type="submit" name="submit" value="Submit"></td></tr>
 				
 			</table>
 		</form>
+		
+		</fieldset>
 	
 </body>
 </html>
