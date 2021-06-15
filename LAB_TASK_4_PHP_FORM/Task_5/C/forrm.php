@@ -1,21 +1,17 @@
 <?php
 	
-	$DOB = "";
+	$degree = "";
 	
 	if(isset($_REQUEST['submit'])){
 		
-		$email = $_REQUEST['DOB'];
-		if($DOB == ""){
-			echo "invalid DOB!";
+		$degree = $_REQUEST['degree'];
+		if($degree == ""){
+			echo "invalid degree!";
 		}
 	}else{
 		echo 'invalid request';
 	}
 ?>
-
-
-
-
 
 
 <html>
@@ -24,23 +20,16 @@
 </head>
 <body>
 <fieldset>
-		<legend>Date of Birth</legend>
+		<legend>Degree</legend>
 
 		<form method="POST" >
 			<table>
-				    <tr><td>
-						
-				    dd </td><td>
-						
-				    mm</td><td>
-						
-				    yyyy </td>
-					</td></tr>
+				
 					<tr><td>
-						
-					<input type="date" name="dob"></td>
+						<input type="checkbox" name="degree" value=""> SSC
+						<input type="checkbox" name="degree" value=""> HSC
+						<input type="checkbox" name="degree" value=""> BSc
 					</td></tr>
-					<tr><td>_____________________________</td></tr>
 				<tr><td><input type="submit" name="submit" value="Submit"></td></tr>
 				
 			</table>
@@ -50,3 +39,6 @@
 	
 </body>
 </html>
+
+
+
