@@ -1,13 +1,23 @@
 <!DOCTYPE html>
+
+
 <html>
 <head>
-	<title>Form Data</title>
+	<title>HTML Form Tag</title>
 </head>
 <body>
-	<form method="post" action="name.php">
 
-		Username: <input type="text" name="username" value="" />
-				<input type="submit" name="submit" value="Submit">
-	</form>
+		<form method="POST" action="name.php">
+			<table>
+				<tr>
+					<td>Email</td></tr>
+					
+					<tr><td><input type="email" name="email" value="" placeholder="type email"></td>
+				</tr>
+				<tr><td><input type="submit" name="submit" value="Submit"></td></tr>
+				
+			</table>
+		</form>
+	
 </body>
 </html>

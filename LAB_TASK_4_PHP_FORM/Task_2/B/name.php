@@ -2,12 +2,12 @@
 	
 	if(isset($_REQUEST['submit'])){
 		
-		$username = $_REQUEST['username'];
+		$email = $_REQUEST['email'];
 
-		if($username == ""){
-			echo "invalid username!";
+		if($email == ""){
+			echo "invalid email!";
 		}else{
-			echo $username;
+			echo $email;
 		}
 
 	}else{
