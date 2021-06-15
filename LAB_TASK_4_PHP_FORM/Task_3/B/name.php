@@ -1,15 +1,13 @@
 <?php
 	
+	$DOB = "";
+	
 	if(isset($_REQUEST['submit'])){
 		
-		$email = $_REQUEST['email'];
-
-		if($email == ""){
-			echo "invalid email!";
-		}else{
-			echo $email;
+		$email = $_REQUEST['DOB'];
+		if($DOB == ""){
+			echo "invalid DOB!";
 		}
-
 	}else{
 		echo 'invalid request';
 	}
