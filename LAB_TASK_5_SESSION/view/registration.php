@@ -45,6 +45,7 @@
 					<td><input type="submit" name="submit" value="Signup"></td>
 					<td><input type="reset" name="reset" value="Reset"></td>
 				</tr>
+					<tr><td raw span ="2"> Copyright @ 2017</td></tr>
 			</table>
 		</fieldset>
 	</form>
