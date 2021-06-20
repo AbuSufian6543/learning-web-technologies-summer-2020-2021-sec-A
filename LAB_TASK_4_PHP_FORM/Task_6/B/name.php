@@ -1,12 +1,12 @@
 <?php
 	
-	$degree = "";
+	$bg = "";
 	
 	if(isset($_REQUEST['submit'])){
 		
-		$degree = $_REQUEST['DOB'];
-		if($degree == ""){
-			echo "invalid degree!";
+		$bg = $_REQUEST['bg'];
+		if($bg == ""){
+			echo "invalid bg!";
 		}
 	}else{
 		echo 'invalid request';
